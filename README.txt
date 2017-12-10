@@ -9,4 +9,10 @@ large strings, for confirmation.
 - What approaches could you take to improve on this clever idea?
 
 
-ANSWER:
+ANSWER (Runtime and Approach):
+First I constructed a suffixes array of sample.in, then I created a populated a Trie of the suffixes array.
+When finding the pattern queries in the suffix array, it takes compares proportional to the length of each 
+pattern we're searching for, (I've been using the method keysWithPrefix() provided by the TrieST API).
+
+ANSWER (Improvements):
+Instead of using a Suffix Trie, I could use a Suffix Tree (A compressed representation of a Trie).  
